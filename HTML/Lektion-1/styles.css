@@ -35,7 +35,6 @@ p {
 
 main {
   background-color: var(--background-color);
-  box-shadow: 19px 19px 20px 1px rgb(20 20 20);
   padding-top: 5rem !important;
 }
 main,
