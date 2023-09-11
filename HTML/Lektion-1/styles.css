@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #d7d7d7;
+  --background-color: #121315;
+  --body-background-color: #222428;
+  --link-color: rgb(0, 0, 0);
+  --link-text-color: #6a5acd;
+}
+
+body {
+  background: var(--body-background-color);
+  color: var(--primary-color);
+}
+
+@font-face {
+  font-family: Kanit-italic;
+  src: url("Kanit/Kanit-Italic.ttf");
+}
+@font-face {
+  font-family: Kanit-bold;
+  src: url("Kanit/Kanit-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url("Kanit/Kanit-Light.ttf");
+}
+
+main {
+  background-color: var(--background-color);
+  box-shadow: 19px 19px 20px 1px rgb(20 20 20);
+  padding-top: 5rem !important;
+}
+main,
+footer {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px 24px 32px 24px;
+}
+
+img {
+  max-width: 900px;
+}
+
+a {
+  color: var(--link-text-color);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--link-color);
+  text-align: center;
+  font-weight: bold;
+  font-family: Kanit-bold;
+}
+
+.list li:hover {
+  box-shadow: 5px 5px 0px rgb(219, 219, 219);
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+p {
+  box-sizing: border-box;
+  font-family: Kanit;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--body-background-color);
+  font-size: 2rem;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: Kanit;
+  padding: 0 1rem 0 1rem;
+}
+
+nav a:hover {
+  color: var(--link-text-color);
+}
+
+article {
+  box-sizing: border-box;
+}
+
+article p {
+  padding: 10px;
+  font-family: Kanit;
+  font-size: 1.2;
+  text-align: justify;
+}
+article a {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+ul {
+  box-sizing: border-box;
+}
+
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h1 {
+  font-family: Kanit-bold;
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: Kanit-bold;
+  text-align: center;
+}
