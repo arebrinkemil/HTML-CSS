@@ -11,6 +11,14 @@ body {
   color: var(--primary-color);
 }
 
+footer,
+ul,
+article,
+nav,
+p {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Kanit-italic;
   src: url("Kanit/Kanit-Italic.ttf");
@@ -70,14 +78,12 @@ a {
 }
 
 p {
-  box-sizing: border-box;
   font-family: Kanit;
   text-align: center;
   font-size: 1.5rem;
 }
 
 nav {
-  box-sizing: border-box;
   text-align: center;
   padding: 1rem;
   background-color: var(--body-background-color);
@@ -99,10 +105,6 @@ nav a:hover {
   color: var(--link-text-color);
 }
 
-article {
-  box-sizing: border-box;
-}
-
 article p {
   padding: 10px;
   font-family: Kanit;
@@ -114,12 +116,7 @@ article a {
   color: var(--primary-color);
 }
 
-ul {
-  box-sizing: border-box;
-}
-
 footer {
-  box-sizing: border-box;
   text-align: center;
   font-size: 2rem;
 }
