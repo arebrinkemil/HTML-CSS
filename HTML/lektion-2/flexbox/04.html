@@ -9,17 +9,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: gainsboro;
+        background-color: #e6e4e1;
         height: 100vh;
       }
 
       main {
         height: 80vh;
         width: 90vw;
-        background-color: white;
+        background-color: #f7f4f1;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        box-shadow: 3px 15px 15px 4px rgb(187 185 185);
       }
 
       nav {
@@ -54,6 +55,11 @@
         margin-right: 20px;
       }
 
+      nav a {
+        margin-right: 20px;
+        text-decoration: none;
+      }
+
       section {
         width: 85%;
         display: flex;
@@ -65,19 +71,23 @@
       }
 
       h1 {
-        font-size: 6rem;
+        font-size: 7rem;
         margin: 0;
+        font-family: Verdana;
+        font-weight: 500;
+        letter-spacing: -6px;
+        line-height: 0.8;
       }
 
       p,
       a {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0;
         font-family: serif;
       }
 
       .banner {
-        width: 86%;
+        width: 85%;
         height: 30vh;
       }
 
@@ -89,6 +99,7 @@
         font-weight: bold;
         font-family: monospace;
         text-decoration: underline;
+        word-spacing: -10px;
       }
 
       img {
@@ -103,10 +114,10 @@
       <nav>
         <h2>anteelo</h2>
         <div class="nav-links">
-          <a>Services</a>
-          <a>About</a>
-          <a>Work</a>
-          <a>Contact</a>
+          <a href="">Services</a>
+          <a href="">About</a>
+          <a href="">Work</a>
+          <a href="">Contact</a>
         </div>
       </nav>
       <section>
@@ -128,7 +139,7 @@
         </div>
       </section>
       <div class="banner">
-        <img src="https://placehold.co/600x400" />
+        <img src="site-image.png" />
       </div>
     </main>
   </body>
