@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Start from the left */
+        align-content: flex-start; /* Start from the top */
+        width: 600px; /* Adjust the width of the big square as needed */
+        height: 600px; /* This sets the height of the big square */
+        background-color: lightgray; /* For visualization */
+      }
+
+      .card {
+        flex-basis: calc(
+          50% - 10px
+        ); /* 50% width with 10px margin between cards */
+        height: calc(50% - 10px); /* Height equal to width with 10px margin */
+        margin: 5px; /* Space between cards */
+        background-color: #3498db; /* Card background color */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- Content for the first card -->
+      </div>
+      <div class="card">
+        <!-- Content for the second card -->
+      </div>
+      <div class="card">
+        <!-- Content for the third card -->
+      </div>
+      <div class="card">
+        <!-- Content for the fourth card -->
+      </div>
+    </div>
+  </body>
+</html>
