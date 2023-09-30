@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1><a class="logo" href="index.html">Noticify</a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Welcome to Noticify</h2>
+            <p class="large">
+                A digital notice board where you can find everything! Also, I’m very good at writing these descriptive texts. Have a good day. Stay in school etc.
+            </p>
+            <div class="button-group">
+                <button class="btn">
+                    Learn more
+                    <span class="btn-arrow">
+                        <img src="images/arrow-black.svg" alt="Right arrow icon">
+                    </span>
+                </button>
+                <button class="btn secondary">
+                    Contact us
+                    <span class="btn-arrow">
+                        <img src="images/arrow-black.svg" alt="Right arrow icon">
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <div class="tags">
+                    <span class="tag blue">Office</span>
+                    <span class="tag green">Gothenburg</span>
+                </div>
+                <h3>An amazing office space</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </p>
+                <button class="card-button">
+                    <img src="images/arrow.svg" alt="Read more">
+                </button>
+            </article>
+
+            <article class="card">
+                <div class="tags">
+                    <span class="tag green">Office</span>
+                    <span class="tag yellow">Gothenburg</span>
+                </div>
+                <h3>Have you seen my cat?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                </p>
+                <button class="card-button">
+                    <img src="images/arrow.svg" alt="Read more">
+                </button>
+            </article>
+
+            <article class="card">
+                <div class="tags">
+                    <span class="tag pink">Money</span>
+                    <span class="tag yellow">Gothenburg</span>
+                </div>
+                <h3>Win 5 million dollars!</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo.
+                </p>
+                <button class="card-button">
+                    <img src="images/arrow.svg" alt="Read more">
+                </button>
+            </article>
+
+            <article class="card">
+                <div class="tags">
+                    <span class="tag yellow">Gothenburg</span>
+                    <span class="tag green">Jobs</span>
+                </div>
+                <h3>Developers! Look at this.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, cons
+                </p>
+                <button class="card-button">
+                    <img src="images/arrow.svg" alt="Read more">
+                </button>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+:root {
+  --red: #fa6262;
+  --blue-light: #cae9f2;
+  --bg-light-gray: #fbfbfb;
+  --yellow-bright: #fffacc;
+  --green-light: #e2efc7;
+  --pink-light: #efc7c7;
+  --main-text-color: #000;
+  --blue: #a1dbed;
+  --green: #d4eda1;
+  --break-small: 678px;
+  --break-medium: 1024px;
+}
+
+/* Global Resets and Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+p.large {
+  font-size: 1.5rem;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  gap: 5rem;
+  padding: 2.5rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--red);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-weight: 800;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+/* Intro and Card Styles */
+.intro {
+  flex: 1;
+  width: 40%;
+}
+
+.cards {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--bg-light-gray);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  position: relative;
+  flex: 1;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--red);
+  border-radius: 0 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Tags and Custom Buttons */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.tag.yellow { background-color: var(--yellow-bright); }
+.tag.green  { background-color: var(--green-light); }
+.tag.blue   { background-color: var(--blue-light); }
+.tag.pink   { background-color: var(--pink-light); }
+
+/* Button Styling */
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  position: relative;
+  font-size: 1rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.039);
+}
+
+.btn .btn-arrow {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.btn .btn-arrow img {
+  width: 14px;
+  height: 14px;
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+/* Media Queries */
+@media (max-width: var(--break-medium)) {
+  main {
+    flex-direction: column;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .cards {
+    width: 100%;
+  }
+}
+
+@media (max-width: var(--break-small)) {
+  .card {
+    width: 100%;
+  }
+}
+
